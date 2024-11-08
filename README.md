@@ -11,10 +11,12 @@ Este projeto é uma proposta para um desafio técnico solicitado pela IBM, com o
 
 ## Requisitos de Tecnologias
 
-- **FrontEnd**: Angular
+- **FrontEnd**: Angular (com Angular Material)
+    - https://github.com/evaldovisk/ibm-desafio-front
 - **BackEnd**: Java (Spring Boot)
 - **Banco de Dados**: MySQL, SQL Server, MongoDB ou PostgreSQL, ou ainda arquivo JSON.
-
+    - https://github.com/evaldovisk/ibm-desafio
+  
 ## Documentação
 
 Toda a documentação da API foi gerada automaticamente pelo Swagger e fica disponível após a subida da aplicação. Acesse a documentação na URL:
