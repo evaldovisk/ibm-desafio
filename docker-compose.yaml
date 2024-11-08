@@ -1,0 +1,21 @@
+services:
+  project:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:17.0
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: ibm-desafio-db
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
